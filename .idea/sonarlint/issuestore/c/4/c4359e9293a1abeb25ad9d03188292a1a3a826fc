@@ -1,0 +1,11 @@
+
+Psquid:S1444"2Make this "public static soulInstance" field final(ºÏëó8ÚœÊıƒ.
+jsquid:S3973("GUse indentation to denote the code conditionally executed by this "if".(ˆ›“Áıÿÿÿÿ8“ƒşƒ.
+esquid:S00112%"FDefine and throw a dedicated exception instead of using a generic one.(ÖäÙÕ8ˆ¸Òıƒ.
+psquid:S29754"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(™”” 8¿ßçıƒ.
+esquid:S11824"HUse super.clone() to create and seed the cloned instance to be returned.(™”” 8ÅÍéıƒ.
+esquid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(ã‡8İËÍıƒ.
+esquid:S00112 "FDefine and throw a dedicated exception instead of using a generic one.(ÏÄí¢8ãıÍıƒ.
+csquid:S2062/"EMake this class "private" or elevate the visibility of "readResolve".(ù”Ú¿8ï¨Üıƒ.
+"squid:ClassVariableVisibilityCheck"XMake soulInstance a static final constant or non-public and provide accessors if needed.(ºÏëó8ÚœÊıƒ.
+Lsquid:S3077".Remove the "volatile" keyword from this field.(ºÏëó8Ïã‹şƒ.

@@ -1,0 +1,10 @@
+
+msquid:S20956"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(¶¡Œ48Ìê­üƒ.
+bsquid:UnusedPrivateMethod."6Remove this unused private "breakByReflection" method.(×³†8½”¾üƒ.
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(é’Ø‚ıÿÿÿÿ8Ú»øûƒ.
+msquid:S20958"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ûš«8ß–²üƒ.
+jsquid:S001125"FDefine and throw a dedicated exception instead of using a generic one.(‡ãòáûÿÿÿÿ8°Ê«üƒ.
+nsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(­Ì¥Ïûÿÿÿÿ8³ğ½üƒ.
+xsquid:UselessImportCheck"HRemove this unused import 'java.lang.reflect.InvocationTargetException'.(è¾†„øÿÿÿÿ8¼áÛüƒ.
+esquid:S00112."FDefine and throw a dedicated exception instead of using a generic one.(×³†8¼áÛüƒ.

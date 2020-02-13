@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d988ef-5927-422e-ae4d-b8ed044cfafe" name="Default Changelist" comment="" />
+    <list default="true" id="97d988ef-5927-422e-ae4d-b8ed044cfafe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/silvertech/javaprojects/designpattern/singleton/BreachSingletonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/silvertech/javaprojects/designpattern/singleton/SingletonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/silvertech/javaprojects/designpattern/singleton/SingletonRobust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,17 +67,24 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XjzNUlSO69TPQFpaqbPunSrfbK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -73,13 +93,16 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.silvertech.javaprojects.designpattern.factorymethod" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.silvertech.javaprojects.designpattern.singleton" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.silvertech.javaprojects.designpattern.factorymethod.csv" />
       <recent name="com.silvertech.javaprojects.designpattern.factorymethod.text" />
       <recent name="com.silvertech.javaprojects.designpattern.factorymethod" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.BreachSingletonExampleByReflection">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.silvertech.javaprojects.designpattern.factorymethod.App" />
       <module name="design-pattern.main" />
@@ -87,6 +110,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.silvertech.javaprojects.designpattern.factorymethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BreachSingletonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.silvertech.javaprojects.designpattern.singleton.BreachSingletonExample" />
+      <module name="design-pattern.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.silvertech.javaprojects.designpattern.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,9 +172,11 @@
       <item itemvalue="Application.App" />
       <item itemvalue="Gradle.design-pattern [build]" />
       <item itemvalue="Gradle.design-pattern [jar]" />
+      <item itemvalue="Application.BreachSingletonExampleByReflection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BreachSingletonExampleByReflection" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.design-pattern [jar]" />
         <item itemvalue="Gradle.design-pattern [build]" />
@@ -170,33 +208,72 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="225" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1581577885684" />
-    <state x="575" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1581577166726">
+    <state x="426" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581614637023">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="575" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1581577166726" />
+    <state x="426" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1581614637023" />
+    <state x="575" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1581617112861">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="575" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1581617112861" />
     <state x="469" y="258" width="809" height="317" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581576588879">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="469" y="258" width="809" height="317" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1581576588879" />
-    <state width="1495" height="364" key="GridCell.Tab.0.bottom" timestamp="1581577897604">
+    <state width="1495" height="244" key="GridCell.Tab.0.bottom" timestamp="1581619057805">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1495" height="364" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1581577897604" />
-    <state width="1495" height="364" key="GridCell.Tab.0.center" timestamp="1581577897604">
+    <state width="1495" height="244" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.0.center" timestamp="1581619057805">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1495" height="364" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1581577897604" />
-    <state width="1495" height="364" key="GridCell.Tab.0.left" timestamp="1581577897604">
+    <state width="1495" height="244" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.0.left" timestamp="1581619057804">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1495" height="364" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1581577897604" />
-    <state width="1495" height="364" key="GridCell.Tab.0.right" timestamp="1581577897604">
+    <state width="1495" height="244" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1581619057804" />
+    <state width="1495" height="244" key="GridCell.Tab.0.right" timestamp="1581619057805">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1495" height="364" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1581577897604" />
+    <state width="1495" height="244" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.1.bottom" timestamp="1581619057805">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1495" height="244" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.1.center" timestamp="1581619057805">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1495" height="244" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.1.left" timestamp="1581619057805">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1495" height="244" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state width="1495" height="244" key="GridCell.Tab.1.right" timestamp="1581619057805">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1495" height="244" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1581619057805" />
+    <state x="500" y="162" key="extract.method.dialog" timestamp="1581613905451">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="500" y="162" key="extract.method.dialog/0.0.1536.834@0.0.1536.834" timestamp="1581613905451" />
+    <state x="0" y="0" key="new project wizard" timestamp="1581590464361">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1581590464361" />
     <state x="426" y="190" key="run.anything.popup" timestamp="1581576546694">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="426" y="190" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1581576546694" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/silvertech/javaprojects/designpattern/singleton/BreachSingletonExample.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
