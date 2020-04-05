@@ -1,7 +1,7 @@
-package com.silvertech.javaprojects.designpattern.singleton;
+package com.silvertech.javaprojects.designpattern.producerconsumer.waitnotify;
 
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /*
  * design-pattern
@@ -27,28 +27,43 @@ import java.io.Serializable;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-public class SingletonRobust implements Serializable, Cloneable {
-  public static volatile SingletonRobust soulInstance = null;
-  private SingletonRobust() throws Exception {
-    if(soulInstance != null)throw new Exception("Please use getInstance()");
+public class CustomBlockingQueue<T> {
+  private int max;
+  private Queue<T> queue;
+  public CustomBlockingQueue(int size){
+    this.max =size;
+    this.queue = new LinkedList<>();
   }
 
-  //double check lock
-  public static SingletonRobust getInstance() throws Exception {
-    if(soulInstance == null){
-      synchronized (SingletonRobust.class) {
-        if(soulInstance == null)soulInstance = new SingletonRobust();
+  public void insert(T item) throws InterruptedException {
+    synchronized (queue){
+      while (this.queue.size()==this.max){
+        try{
+          System.out.println("{Queue::full} - waiting for consumer to consume the task");
+          queue.wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
       }
+      queue.add(item);
+      queue.notifyAll();
     }
-    return soulInstance;
+    Thread.sleep(100);
   }
 
-  private Object readResolve() throws ObjectStreamException {
-    return soulInstance;
-  }
-
-  @Override
-  protected Object clone() throws CloneNotSupportedException {
-    return soulInstance;
+  public T take() throws InterruptedException {
+    synchronized (queue){
+      while (this.queue.size()==0){
+        try {
+          System.out.println("{Queue::empty} - waiting for producer to produce the task");
+          queue.wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+      }
+      T item = queue.remove();
+      queue.notifyAll();
+      return item;
+    }
   }
 }

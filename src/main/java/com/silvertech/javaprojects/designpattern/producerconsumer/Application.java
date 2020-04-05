@@ -1,7 +1,8 @@
-package com.silvertech.javaprojects.designpattern.singleton;
+package com.silvertech.javaprojects.designpattern.producerconsumer;
 
-import java.io.ObjectStreamException;
-import java.io.Serializable;
+import com.silvertech.javaprojects.designpattern.producerconsumer.waitnotify.CustomBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /*
  * design-pattern
@@ -27,28 +28,37 @@ import java.io.Serializable;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-public class SingletonRobust implements Serializable, Cloneable {
-  public static volatile SingletonRobust soulInstance = null;
-  private SingletonRobust() throws Exception {
-    if(soulInstance != null)throw new Exception("Please use getInstance()");
-  }
+public class Application {
 
-  //double check lock
-  public static SingletonRobust getInstance() throws Exception {
-    if(soulInstance == null){
-      synchronized (SingletonRobust.class) {
-        if(soulInstance == null)soulInstance = new SingletonRobust();
+  public static void main(String[] args) throws InterruptedException {
+//    CustomBlockingQueue<String> queue = new CustomBlockingQueue<>(5);
+    BlockingQueue<String> queue = new LinkedBlockingQueue<>();
+    Runnable producer = ()->{
+      int count = 0;
+      while (true){
+        queue.add("Task->"+count);
+        count++;
       }
-    }
-    return soulInstance;
+    };
+
+    new Thread(producer).start();
+    new Thread(producer).start();
+
+    Runnable consumer = ()->{
+      while (true){
+        String task = null;
+        try {
+          task = queue.take();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+        System.out.println("Processed task:: "+task);
+      }
+    };
+
+    new Thread(consumer).start();
+//    new Thread(consumer).start();
+    Thread.sleep(1000);
   }
 
-  private Object readResolve() throws ObjectStreamException {
-    return soulInstance;
-  }
-
-  @Override
-  protected Object clone() throws CloneNotSupportedException {
-    return soulInstance;
-  }
 }
